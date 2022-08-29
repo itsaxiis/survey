@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Survey Project</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="header-text">
+        <h1>freecodecamp Survey Form Project</h1>
+        <p>Thank you for taking the time to help us improve the platform</p>
+    </div>
+
+        <form class="form" name="form">
+            <div class="form-group">
+                <label for="name" class="initial">Name</label>
+                <input class="input" type="text" for="name" placeholder="Enter your name here" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input class="input" type="email" for="email" placeholder="Enter your email here" required>
+            </div>
+
+            <div class="form-group">
+                <label>Age (optional)</label>
+                <input class="input" type="number" for="age" placeholder="Enter your age here">
+            </div>
+
+            <div class="form-group">
+                <label>What option best describes your current role?</label>
+                <select class="input select" required>
+                    <option disabled selected value="">Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="none">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Would you recommend freecodecamp to a friend?</label>
+                <label class="options"><input type="radio" for="referal" name="referal"  checked required>Definitely<br></label>
+                <label class="options"><input type="radio" for="referal" name="referal" required>Maybe<br></label>
+                <label class="options"><input type="radio" for="referal" name="referal" required>Not Sure</label>
+            </div>
+            
+            <label for="improvement" class="form-group">What would you like to see improved? (Check all that apply)</label>
+            <label class="options"><input type="checkbox" for="improvement">Front-End Projects<br></label>
+            <label class="options"><input type="checkbox" for="improvement">Back-End Projects<br></label>
+            <label class="options"><input type="checkbox" for="improvement">Data Visualization<br></label>
+            <label class="options"><input type="checkbox" for="improvement">Challenges<br></label>
+            <label class="options"><input type="checkbox" for="improvement">Open Source Community<br></label>
+            <label class="options"><input type="checkbox" for="improvement">Gitter Room Help<br></label>
+            <label class="options"><input type="checkbox" for="improvement">Videos<br></label>
+            <label class="options"><input type="checkbox" for="improvement">City Meetups<br></label>
+            <label class="options"><input type="checkbox" for="improvement">Wiki<br></label>
+            <label class="options"><input type="checkbox" for="improvement">Forum<br></label>
+            <label class="options"><input type="checkbox" for="improvement">Additional Forums</label>
+
+            <label class="form-group label">Any comments or suggestions?</label>
+        <textarea class="input comments" placeholder="Enter your comment here?"></textarea><br>
+        
+        <input type="submit" name="form" value="Submit" class="button"><br>
+        </form>
+
+    </body>
+</html>
